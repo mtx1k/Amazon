@@ -15,12 +15,12 @@ public class Main {
 
         System.out.println();
         Movie[] movies = {new Movie(), new Movie()};
-        movies[0].title = "Der Herr der Ringe: Extended Edition Trilogie";
-        movies[0].genre = MovieGenre.FANTASY;
-        movies[0].price = 25;
-        movies[1].title = "Allein zu Haus";
-        movies[1].genre = MovieGenre.COMEDY;
-        movies[1].price = 8;
+        movies[0].setTitle("Der Herr der Ringe: Extended Edition Trilogie");
+        movies[0].setGenre(MovieGenre.FANTASY);
+        movies[0].setPrice(25);
+        movies[1].setTitle("Allein zu Haus");
+        movies[1].setGenre(MovieGenre.COMEDY);
+        movies[1].setPrice(8);
 
         System.out.println("Movies: ");
         for (Movie movie : movies) {
@@ -33,8 +33,8 @@ public class Main {
                 + "Price: " + book.getPrice());
     }
     public static void printMovieDetails(Movie movie) {
-        System.out.println("Title: " + movie.title + "\n"
-                + "Genre: " + movie.genre + "\n"
-                + "Price: " + movie.price);
+        System.out.println("Title: " + movie.getTitle() + "\n"
+                + "Genre: " + movie.getGenre() + "\n"
+                + "Price: " + movie.getPrice());
     }
 }
