@@ -26,4 +26,10 @@ public class Book {
     public void setPrice(int price) {
         this.price = price;
     }
+
+    public void printBookDetails() {
+        System.out.println("Title: " + this.title + "\n"
+                + "Author: " + this.author + "\n"
+                + "Price: " + this.price);
+    }
 }

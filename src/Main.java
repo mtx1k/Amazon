@@ -10,7 +10,7 @@ public class Main {
 
         System.out.println("Books: ");
         for (int i = 0; i < books.length; i++) {
-            printBookDetails(books[i]);
+            books[i].printBookDetails();
         }
 
         System.out.println();
@@ -24,17 +24,17 @@ public class Main {
 
         System.out.println("Movies: ");
         for (Movie movie : movies) {
-            printMovieDetails(movie);
+            movie.printMovieDetails();
         }
     }
-    public static void printBookDetails(Book book) {
-        System.out.println("Title: " + book.getTitle() + "\n"
-                + "Author: " + book.getAuthor() + "\n"
-                + "Price: " + book.getPrice());
-    }
-    public static void printMovieDetails(Movie movie) {
-        System.out.println("Title: " + movie.getTitle() + "\n"
-                + "Genre: " + movie.getGenre() + "\n"
-                + "Price: " + movie.getPrice());
-    }
+//    public static void printBookDetails(Book book) {
+//        System.out.println("Title: " + book.getTitle() + "\n"
+//                + "Author: " + book.getAuthor() + "\n"
+//                + "Price: " + book.getPrice());
+//    }
+//    public static void printMovieDetails(Movie movie) {
+//        System.out.println("Title: " + movie.getTitle() + "\n"
+//                + "Genre: " + movie.getGenre() + "\n"
+//                + "Price: " + movie.getPrice());
+//    }
 }

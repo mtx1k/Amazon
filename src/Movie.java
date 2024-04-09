@@ -26,4 +26,9 @@ public class Movie {
     public void setPrice(int price) {
         this.price = price;
     }
+    public void printMovieDetails() {
+        System.out.println("Title: " + this.title + "\n"
+                + "Genre: " + this.genre + "\n"
+                + "Price: " + this.price);
+    }
 }
