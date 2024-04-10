@@ -2,6 +2,7 @@ public class Movie {
     private String title;
     private MovieGenre genre;
     private int price;
+    private String director;
 
     public Movie() {
 
@@ -11,6 +12,14 @@ public class Movie {
         this.title = title;
         this.genre = genre;
         this.price = price;
+        this.director = "";
+    }
+
+    public Movie(String title, String director, MovieGenre genre, int price) {
+        this.director = director;
+        this.price = price;
+        this.genre = genre;
+        this.title = title;
     }
 
     public String getTitle() {
@@ -37,8 +46,11 @@ public class Movie {
         this.price = price;
     }
     public void printMovieDetails() {
-        System.out.println("Title: " + this.title + "\n"
-                + "Genre: " + this.genre + "\n"
-                + "Price: " + this.price);
+        System.out.println("Title: " + this.title);
+        if (!director.isEmpty()) {
+            System.out.println("Director: " + director);
+        }
+        System.out.println("Genre: " + this.genre);
+        System.out.println("Price: " + this.price);
     }
 }

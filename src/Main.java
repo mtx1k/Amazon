@@ -29,11 +29,13 @@ public class Main {
         System.out.println("Movies: ");
         Movie herrDerRinge = new Movie("Der Herr der Ringe", MovieGenre.FANTASY, 100);
         Movie alleinZuHaus = new Movie("Allein zu Haus", MovieGenre.COMEDY, 20);
+        Movie matrix = new Movie("The Matrix", "Vachovsky Brs.", MovieGenre.ACTION, 50);
 //        for (Movie movie : movies) {
 //            movie.printMovieDetails();
 //        }
         herrDerRinge.printMovieDetails();
         alleinZuHaus.printMovieDetails();
+        matrix.printMovieDetails();
     }
 //    public static void printBookDetails(Book book) {
 //        System.out.println("Title: " + book.getTitle() + "\n"
