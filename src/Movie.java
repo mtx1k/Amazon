@@ -3,6 +3,16 @@ public class Movie {
     private MovieGenre genre;
     private int price;
 
+    public Movie() {
+
+    }
+
+    public Movie(String title, MovieGenre genre, int price) {
+        this.title = title;
+        this.genre = genre;
+        this.price = price;
+    }
+
     public String getTitle() {
         return title;
     }
